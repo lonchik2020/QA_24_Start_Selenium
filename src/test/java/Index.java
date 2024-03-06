@@ -53,7 +53,7 @@ public class Index {
         WebElement input = wd.findElement(By.cssSelector("[placeholder='Type your name']"));
         //start
         WebElement input3 = wd.findElement(By.cssSelector("[placeholder ^= 'Type'"));
-        WebElement divEl1 = wd.findElement(By.cssSelector("class ^='con']"));
+        WebElement divEl1 = wd.findElement(By.cssSelector("[class ^= 'cont']"));
         //end
         WebElement input4 = wd.findElement(By.cssSelector("[placeholder $='name']"));
         WebElement divEl2 = wd.findElement(By.cssSelector("[class $='ner']"));
