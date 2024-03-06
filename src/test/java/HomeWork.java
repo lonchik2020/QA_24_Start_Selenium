@@ -34,21 +34,29 @@ public class HomeWork {
 
         //by class
 
-        WebElement el3 = wd.findElement(By.cssSelector(".container"));
+        WebElement el3 = wd.findElement(By.className("container"));
+
+        WebElement el4 = wd.findElement(By.cssSelector(".container"));
 
 
         //by id
 
-        WebElement el4 = wd.findElement(By.cssSelector("#root"));
+        WebElement el5 = wd.findElement(By.id("root"));
+
+        WebElement el6 = wd.findElement(By.cssSelector("#root"));
 
 
         //by attribute
 
-        WebElement input1 = wd.findElement(By.cssSelector("[name='email']"));
+        WebElement input1 = wd.findElement(By.name("email"));
 
-        WebElement input2 = wd.findElement(By.cssSelector("[placeholder='Password']"));
+        WebElement input2 = wd.findElement(By.cssSelector("[name='email']"));
+
+        WebElement input3 = wd.findElement(By.cssSelector("[placeholder='Password']"));
 
         WebElement button1 = wd.findElement(By.cssSelector("[name='login']"));
+
+        WebElement el7 = wd.findElement(By.cssSelector("[href='/home']"));
 
 
         //one of elements find by attribute===> start&end&contains value
@@ -66,7 +74,7 @@ public class HomeWork {
         //contains
 
         WebElement button5 = wd.findElement(By.cssSelector("[name *='ist']"));
-        
+
 
     }
 }
