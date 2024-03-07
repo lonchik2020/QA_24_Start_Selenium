@@ -7,6 +7,8 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
+//*[@id='root'] ====>search by xpath
+
 
 public class HomeWork {
 
@@ -31,12 +33,16 @@ public class HomeWork {
 
         int i = list.size();
 
+        WebElement button6 = wd.findElement(By.xpath("//button"));
+
 
         //by class
 
         WebElement el3 = wd.findElement(By.className("container"));
 
         WebElement el4 = wd.findElement(By.cssSelector(".container"));
+
+        WebElement el10 = wd.findElement(By.xpath("//*[@class='container']"));
 
 
         //by id
@@ -45,12 +51,18 @@ public class HomeWork {
 
         WebElement el6 = wd.findElement(By.cssSelector("#root"));
 
+        WebElement el11 = wd.findElement(By.xpath("//*[@id='root']"));
+
 
         //by attribute
 
         WebElement input1 = wd.findElement(By.name("email"));
 
         WebElement input2 = wd.findElement(By.cssSelector("[name='email']"));
+
+
+        WebElement el12 = wd.findElement(By.xpath("//div[@id='root']"));
+
 
         WebElement input3 = wd.findElement(By.cssSelector("[placeholder='Password']"));
 
@@ -63,9 +75,13 @@ public class HomeWork {
 
         WebElement button2 = wd.findElement(By.cssSelector("[name='registration']"));
 
+        WebElement button22 = wd.findElement(By.xpath("//input[@name='registration']"));
+
         //start
 
         WebElement button3 = wd.findElement(By.cssSelector("[name ^='reg']"));
+
+        WebElement button33 = wd.findElement(By.xpath("//*starts-with(@name, 'reg')"));
 
         //end
 
