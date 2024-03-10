@@ -89,8 +89,8 @@ public class Index {
         List<WebElement> a2 = wd.findElements(By.partialLinkText("em"));
 
 
-
-
     }
+
+
 
 }
