@@ -42,7 +42,6 @@ public class HomeWork {
 
         WebElement el4 = wd.findElement(By.cssSelector(".container"));
 
-        WebElement el10 = wd.findElement(By.xpath("//*[@class='container']"));
 
 
         //by id
@@ -51,7 +50,6 @@ public class HomeWork {
 
         WebElement el6 = wd.findElement(By.cssSelector("#root"));
 
-        WebElement el11 = wd.findElement(By.xpath("//*[@id='root']"));
 
 
         //by attribute
@@ -61,9 +59,6 @@ public class HomeWork {
         WebElement input2 = wd.findElement(By.cssSelector("[name='email']"));
 
 
-        WebElement el12 = wd.findElement(By.xpath("//div[@id='root']"));
-
-
         WebElement input3 = wd.findElement(By.cssSelector("[placeholder='Password']"));
 
         WebElement button1 = wd.findElement(By.cssSelector("[name='login']"));
@@ -71,17 +66,17 @@ public class HomeWork {
         WebElement el7 = wd.findElement(By.cssSelector("[href='/home']"));
 
 
+
         //one of elements find by attribute===> start&end&contains value
 
         WebElement button2 = wd.findElement(By.cssSelector("[name='registration']"));
 
-        WebElement button22 = wd.findElement(By.xpath("//input[@name='registration']"));
 
         //start
 
         WebElement button3 = wd.findElement(By.cssSelector("[name ^='reg']"));
 
-        WebElement button33 = wd.findElement(By.xpath("//*starts-with(@name, 'reg')"));
+
 
         //end
 
@@ -93,4 +88,51 @@ public class HomeWork {
 
 
     }
+
+    @Test
+    public void xPathLocators(){
+
+        //by tag name
+
+        WebElement el20 = wd.findElement(By.xpath("//h1"));
+
+        WebElement el21 = wd.findElement(By.xpath("//form"));
+
+
+        //by class
+
+        WebElement el22 = wd.findElement(By.xpath("//*[@class='container']"));
+
+
+        //by id
+
+        WebElement el23 = wd.findElement(By.xpath("//*[@id='root']"));
+
+
+        //by attribute
+
+        WebElement el24 = wd.findElement(By.xpath("//div[@id='root']"));
+
+
+        WebElement button25 = wd.findElement(By.xpath("//button[@name='login']"));
+
+
+        //one of elements find by attribute===> start&end&contains value
+
+        WebElement button20 = wd.findElement(By.xpath("//button[@name='registration']"));
+
+
+        //start
+
+        WebElement button33 = wd.findElement(By.xpath("//*[starts-with(@name,'reg')]"));
+
+
+        //contains
+
+        WebElement button55 = wd.findElement(By.xpath("//*[contains(@name,'ist')]"));
+        
+
+    }
+
+
 }
