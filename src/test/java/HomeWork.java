@@ -88,6 +88,11 @@ public class HomeWork {
         WebElement button5 = wd.findElement(By.cssSelector("[name *='ist']"));
 
 
+        //combined search
+
+        WebElement div1 = wd.findElement(By.cssSelector("div#root.container"));
+
+
     }
 
     @Test
@@ -138,6 +143,15 @@ public class HomeWork {
         WebElement home = wd.findElement(By.xpath("//*[text()='HOME']"));
 
         Assert.assertEquals(home.getText(), "HOME");
+
+
+        //combined search
+
+        WebElement div2 = wd.findElement(By.xpath("//div[@id='root' and @class='container']"));
+
+        WebElement el34 = wd.findElement(By.xpath("//*[@id and @class]"));
+
+
 
 
     }
